@@ -1,0 +1,97 @@
+{
+  "selected_model": {
+    "status": "completed",
+    "experiment": "E6",
+    "mode": "FULL_TRAIN",
+    "seed": 17,
+    "best_epoch": 9,
+    "validation": {
+      "rank1": 43.14999878406525,
+      "rank5": 61.15000247955322,
+      "rank10": 68.50000023841858,
+      "mAP": 36.03802751330687,
+      "mINP": 19.64132392135256,
+      "queries": 2000,
+      "gallery": 1000
+    },
+    "run_seconds": 2326.346388676997,
+    "training_seconds": 2248.8838290470303,
+    "checkpoint_sha256": "f49238dc1292e544fd57f5edc53143eb07d4d08bf02d5cdcb4074b813ff7c801",
+    "checkpoint_reload_equal": true,
+    "deterministic": true,
+    "parameters": 190789493,
+    "checkpoint_bytes": 763254018,
+    "torch": "2.7.1+cu126",
+    "python": "3.11.14",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "microbatch_size": 64,
+    "accumulation": 1,
+    "protocol": "decontaminated-training",
+    "train_images": 18501,
+    "train_identities": 3701,
+    "annotation_sha256": "97ea46fde66a22f41f821b563d0f89bb239baaf7d98b141aae367e8f470454fb",
+    "image_manifest_sha256": "7d57f880a3a00574fe9d3f73826f766e1bdfabecd997bb5ae667028f0c39980e"
+  },
+  "additional_finetuning": {
+    "status": "stopped_by_user",
+    "completed_additional_epochs": 16,
+    "starting_validation": {
+      "rank1": 43.14999878406525,
+      "rank5": 61.15000247955322,
+      "rank10": 68.50000023841858,
+      "mAP": 36.03802751330687,
+      "mINP": 19.64132392135256,
+      "queries": 2000,
+      "gallery": 1000
+    },
+    "best_additional_epoch": 2,
+    "best_validation": {
+      "rank1": 43.34999918937683,
+      "rank5": 60.600000619888306,
+      "rank10": 67.44999885559082,
+      "mAP": 36.00203625557096,
+      "mINP": 19.292161796194225,
+      "queries": 2000,
+      "gallery": 1000
+    },
+    "last_completed_epoch": {
+      "epoch": 16,
+      "total_loss": 6.002136243668395,
+      "sdm_loss": 1.0011373028339605,
+      "id_loss": 4.697921088822572,
+      "mlm_loss": 0.3030778447288543,
+      "mlm_accuracy": 0.9074697585939278,
+      "selected_tokens": 171371,
+      "effective_mask_rate": 0.15323858474436838,
+      "visual_mask_fraction": 1.0,
+      "stopword_mask_fraction": 0.0,
+      "phrase_coverage": 0.818885464870603,
+      "validation_rank1": 39.44999873638153,
+      "validation_mAP": 34.129075922426836,
+      "epoch_seconds": 222.317678419,
+      "peak_gpu_memory_bytes": 12491538432,
+      "optimizer_updates": 578
+    }
+  },
+  "protocol": {
+    "training_images": 18501,
+    "training_captions": 37002,
+    "training_identities": 3701,
+    "validation_images": 1000,
+    "validation_captions": 2000,
+    "validation_identities": 200,
+    "test_retrieval_evaluated": false,
+    "duplicate_training_images_excluded": 4
+  },
+  "frozen_clip_validation": {
+    "rank1": 8.250000327825546,
+    "mAP": 6.683962486646275
+  },
+  "limitations": [
+    "One seed; validation results only.",
+    "No matched full-data random-MLM baseline.",
+    "Selected masking adaptations, not a complete KPDM reproduction.",
+    "Extra fine-tuning stopped after 16 completed epochs without clear overall improvement."
+  ]
+}

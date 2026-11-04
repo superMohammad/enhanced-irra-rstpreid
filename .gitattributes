@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+*.gz binary
+src/enhanced_irra/vendor/*.py -text
+src/enhanced_irra/vendor/** -whitespace

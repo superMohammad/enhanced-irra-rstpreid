@@ -1,0 +1,9 @@
+{
+  "policy": "exclude_training_duplicates",
+  "authorized": true,
+  "authorization": "User approved quarantine of four training images in this task on 2026-11-03.",
+  "annotation_sha256": "97ea46fde66a22f41f821b563d0f89bb239baaf7d98b141aae367e8f470454fb",
+  "training_paths": ["2128_c14_0005.jpg", "2426_c7_0002.jpg", "2497_c12_0014.jpg", "2881_c5_0005.jpg"],
+  "evaluation_paths": ["3776_c14_0007.jpg", "3884_c7_0002.jpg", "3935_c12_0001.jpg", "4038_c5_0004.jpg"],
+  "protocol": "Keep official identity membership and all evaluation records. Exclude four training image-caption pairs (eight captions). This is a documented decontaminated-training variant."
+}

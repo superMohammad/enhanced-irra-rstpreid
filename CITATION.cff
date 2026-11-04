@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the underlying papers listed in the README when using this research project."
+title: "Enhanced IRRA: Learning to Match People and Words"
+type: software
+authors:
+  - family-names: Almalke
+    given-names: Mohammad
+repository-code: "https://github.com/superMohammad/enhanced-irra-rstpreid"
+abstract: "A research project on text-to-image person retrieval with CLIP, phrase masking, and frequency-weighted masked language learning. Results are preliminary validation measurements."
+keywords:
+  - text-to-image retrieval
+  - person re-identification
+  - CLIP
+  - multimodal learning

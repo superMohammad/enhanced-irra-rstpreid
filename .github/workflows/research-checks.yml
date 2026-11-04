@@ -1,0 +1,21 @@
+name: Research checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.10.0"
+          enable-cache: true
+      - run: uv sync --frozen --extra dev
+      - run: uv run --frozen --extra dev ruff check src tests
+      - run: uv run --frozen --extra dev mypy src/enhanced_irra
+      - run: uv run --frozen --extra dev pytest -q
+        env:
+          OMP_NUM_THREADS: "2"
+          MPLCONFIGDIR: ${{ runner.temp }}/irra-matplotlib

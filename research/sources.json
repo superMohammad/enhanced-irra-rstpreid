@@ -1,0 +1,48 @@
+{
+  "IRRA": {
+    "paper": "https://arxiv.org/pdf/2303.12501",
+    "code": "https://github.com/anosorae/IRRA",
+    "commit": "cfc23785545ead82dee2749fa0fc0ad948c96430"
+  },
+  "DataEfficientMLM": {
+    "paper": "https://aclanthology.org/2021.findings-emnlp.259/",
+    "code": "https://github.com/yonatanbitton/data_efficient_masked_language_modeling_for_vision_and_language",
+    "commit": "9b27024b8ca11959a3da70514c0043aee90ddfdb"
+  },
+  "KPDM": {
+    "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/38199",
+    "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/38199/42161",
+    "official_code": "No official implementation identified in the inspected paper or searches; implementation limited to disclosed adaptations."
+  },
+  "RSTPReid": {
+    "repository": "https://github.com/NjtechCVLab/RSTPReid-Dataset",
+    "download": "https://drive.google.com/file/d/1HTeDZUVrZr6nL56ZlkYBNqjSWh3IGV2X/view",
+    "rights": "Built from MSMT17. Repository MIT license does not establish rights to redistribute pedestrian images publicly."
+  },
+  "provenance": {
+    "vendored_files": [
+      "clip_model.py",
+      "simple_tokenizer.py",
+      "data/bpe_simple_vocab_16e6.txt.gz"
+    ],
+    "vendor_changes": [
+      "One Chinese code comment translated into English; no functional changes."
+    ],
+    "architecture_deviations": [
+      "Strict pretrained load instead of upstream silent load errors.",
+      "Clean captions isolated from masking (upstream NumPy aliasing corrected)."
+    ],
+    "training_deviations": [
+      "AdamW with no bias/LN decay, instead of default upstream Adam.",
+      "Validation-only early stopping rather than upstream default test monitoring.",
+      "Explicitly authorized quarantine of four cross-split duplicate training images.",
+      "Explicit BF16 autocast after the initial FP16 GPU profile produced scaled-gradient overflow; FP32 loss calculations retained."
+    ],
+    "masking_adaptations": [
+      "Versioned visual lexicon rather than SpaCy POS tags.",
+      "Complete occurrence-based BPE alignment.",
+      "Whole-span token budget with measured overshoot and explicit no-candidate zero MLM.",
+      "KPDM-inspired top-25 training BPE frequency weights, f=count/total, exponent2, floor0.05."
+    ]
+  }
+}
