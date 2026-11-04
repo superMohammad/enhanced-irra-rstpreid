@@ -1,0 +1,47 @@
+[
+  {
+    "asset": "assets/papers/irra-relation-reasoning.png",
+    "source_pdf": "https://arxiv.org/pdf/2303.12501",
+    "source_pdf_sha256": "63bc48897f7b3132567c030b470032f573e3bc284b9e70175d724eee4caec0ad",
+    "pdf_page": 4,
+    "source_figure": "Figure 2, image-conditioned relation-reasoning module excerpt",
+    "crop_rectangle_points": [
+      323,
+      188,
+      526,
+      284
+    ],
+    "render_dpi": 300,
+    "treatment": "Direct cropped rendering from the original PDF; no figure content redrawn."
+  },
+  {
+    "asset": "assets/papers/kpdm-frequency-weighting.png",
+    "source_pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/38199/42161",
+    "source_pdf_sha256": "31f21d1c53996cbd36b520b2ffea6973df7807f04eb4fa742c22b7c71cc9b2cb",
+    "pdf_page": 4,
+    "source_figure": "Figure 3(b), frequency-weighted masked prediction excerpt",
+    "crop_rectangle_points": [
+      374,
+      165,
+      518,
+      244
+    ],
+    "render_dpi": 300,
+    "treatment": "Direct cropped rendering from the original PDF; no figure content redrawn."
+  },
+  {
+    "asset": "assets/papers/image-aware-masking.png",
+    "source_pdf": "https://aclanthology.org/2021.findings-emnlp.259.pdf",
+    "source_pdf_sha256": "3c13e9b011471705949c65d59b585bb1792348069689fb259e3e621f5b21448f",
+    "pdf_page": 1,
+    "source_figure": "Figure 1, image and downstream prediction example excerpt",
+    "crop_rectangle_points": [
+      305,
+      242,
+      529,
+      301
+    ],
+    "render_dpi": 300,
+    "treatment": "Direct cropped rendering from the original PDF; no figure content redrawn."
+  }
+]
